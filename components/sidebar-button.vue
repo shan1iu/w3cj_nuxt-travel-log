@@ -9,7 +9,10 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="tooltip tooltip-right" :data-tip="props.showLabel ? undefined : props.label">
+  <div
+    class="tooltip tooltip-right"
+    :data-tip="props.showLabel ? undefined : props.label"
+  >
     <NuxtLink
       class="flex flex-nowrap gap-2 p-2 hover:bg-base-300 cursor-pointer"
       :to="props.href"
