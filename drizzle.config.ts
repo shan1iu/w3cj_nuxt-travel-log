@@ -6,6 +6,7 @@ import env from "./lib/env";
 export default defineConfig({
   out: "./lib/db/migrations",
   schema: "./lib/db/schema/index.ts",
+  casing: "snake_case",
   dialect: "turso",
   dbCredentials: {
     url: env.TURSO_DATABASE_URL,
